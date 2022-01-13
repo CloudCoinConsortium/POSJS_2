@@ -14,7 +14,7 @@ Example:
         <script>
             var pos = new POSJS2({
                 'timeout':'5000', 
-                'action': 'https://e12.miroch.ru/backend.php', 
+                'action': 'https://yourdomain.com/your_action_page.php', 
                 'merchant_skyvault':'Your.skyvault.cc'
             })
             var get_parameters = {
@@ -123,7 +123,7 @@ More Thurough Example
 			var pos = new POSJS2({
 					'timeout':'20000', //Customize these URLs
 					'action': 'https://yourdomain.com/your_action_page.php', 
-					'merchant_skyvault' : 'sean.cloudcoin.global'
+					'merchant_skyvault' : 'Your.skyvault.cc'
 				})
 			
 			
