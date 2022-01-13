@@ -1,7 +1,7 @@
-# POS_JS_2
+# POSJS_2
 Second version of Point of Service for the new coin
 
-In order to use POS JS library you need to instantiate POSJS2 Object
+In order to use POSJS_2 library you need to instantiate POSJS2 Object
 The widget is opened by the show() method of the object
 
 Example:

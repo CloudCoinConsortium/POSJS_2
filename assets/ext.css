@@ -1,0 +1,187 @@
+.posModal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transform: scale(1,1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	visibility: hidden;
+}
+
+.posModalContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding 1rem 1.5rem;
+	width: 420px;
+	border-radius: 1rem;
+
+}
+
+.posCloseButton {
+	float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #ececec;
+    right: 5px;
+    top: 5px;
+    z-index: 100;
+    position: absolute;	
+}
+
+.posCloseButton:hover {
+	background-color: #ddd;
+}
+
+.posShowModal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.posModalHeader {
+	height: 24px;
+	position: absolute;
+	right: 0;
+}
+
+.posMain {
+	display: flex;
+	flex-direction: column;
+}
+.posError {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.4rem;
+	color: white;
+	font-family: Roboto;
+	justify-content: center;
+	width:100%;
+	background: #cc0000;
+	height: 3rem;
+	position: absolute;
+	border-radius: 10px 10px 0 0 ;
+	
+}
+
+.posRow {
+	flex: 1 auto;
+	margin: 0.5rem 2rem;
+	font-family: Roboto;
+	font-size: 1.2rem;
+	font-weight: 500;
+	width: 360px;
+}
+
+.posRowImg {
+	flex: 1 auto;
+	width: 420px;
+	margin-bottom: 1.5rem;
+}
+
+.posRowDue {
+	margin-bottom: 1.5rem;
+}
+
+#posImg {
+	width: 420px;
+	border-radius: 1rem;
+}
+
+input.posInput {
+	height: 48px;
+	padding: 2px;
+	width: 100%;
+	outline: none;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+
+input.posInput {
+	height: 42px;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	font-size: 1.1rem;
+	box-sizing: border-box;
+	background-color: #eee;
+	border: none;
+	border-radius: 6px;
+
+}
+
+::placeholder {
+	opacity: 0.2;
+}
+
+input.posInputSmall {
+	height: 42px;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    background-color: #eee;
+    border: none;
+    border-radius: 6px;
+}
+
+label.posLabel {
+    display: block;
+    font-size: 0.8rem;
+    padding: 4px 0 0 0;
+    font-family: Roboto;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 5px;
+	
+}
+
+.posHolder {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	width: 100%;
+	justify-content: space-between;
+}
+.posCol {
+	flex: 0 auto;
+}
+
+.posButton {
+    background-repeat: no-repeat !important;
+    height: 32px;
+    background-size: 80px !important;
+    background-position: center !important;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    width: 80px;
+
+}
+
+.posButton:hover {
+	opacity: 0.8
+}
+
+#posImgDue {
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+#posText {
+	text-align:center;
+	min-height: 120px;
+}
